@@ -51,9 +51,11 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 50px;
 	padding: 0 15px;
-	position: relative;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	z-index: 2;
 }
 
 nav::before {
@@ -247,8 +249,6 @@ body.mouse .nav-menu-list-item:hover .nav-submenu-list,
 @media (min-width: 768px) {
 	nav {
 		background-color: #86baa2;
-		height: 100%;
-		min-height: 50px;
 	}
 
 	nav::before {
